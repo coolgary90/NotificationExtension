@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="CustomNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxs-Jq-ZbN">
+                                <rect key="frame" x="10" y="5" width="300" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="4sg-8P-9e1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5VR-m7-agx">
+                                <rect key="frame" x="0.0" y="38" width="320" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Enu-Wc-Wq0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mv-GP-9m6">
+                                <rect key="frame" x="10" y="223" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7bw-Bl-NhA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="KFx-p3-zZe">
+                                <rect key="frame" x="150" y="118" width="20" height="20"/>
+                                <color key="color" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7mv-GP-9m6" firstAttribute="top" secondItem="5VR-m7-agx" secondAttribute="bottom" constant="5" id="2Ll-ef-GCW"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="7mv-GP-9m6" secondAttribute="trailing" constant="10" id="Jh8-MY-lbl"/>
+                            <constraint firstItem="kxs-Jq-ZbN" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="5" id="Paa-RL-d3P"/>
+                            <constraint firstItem="KFx-p3-zZe" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="ZC4-mL-XW5"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="kxs-Jq-ZbN" secondAttribute="trailing" constant="10" id="dSz-su-MBU"/>
+                            <constraint firstItem="KFx-p3-zZe" firstAttribute="centerY" secondItem="5VR-m7-agx" secondAttribute="centerY" id="f5K-x1-Y3Q"/>
+                            <constraint firstItem="7mv-GP-9m6" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="10" id="hhx-b6-7bb"/>
+                            <constraint firstItem="5VR-m7-agx" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="hy6-pF-xbh"/>
+                            <constraint firstItem="5VR-m7-agx" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="iBb-kA-hmn"/>
+                            <constraint firstItem="kxs-Jq-ZbN" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="10" id="pgS-Vv-lCv"/>
+                            <constraint firstItem="5VR-m7-agx" firstAttribute="firstBaseline" secondItem="kxs-Jq-ZbN" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="wtq-4G-0UP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="280"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="KFx-p3-zZe" id="Sf9-L9-bUf"/>
+                        <outlet property="imageView" destination="5VR-m7-agx" id="kJn-3i-DwD"/>
+                        <outlet property="notificationSubTitle" destination="7mv-GP-9m6" id="TvR-FJ-4iG"/>
+                        <outlet property="notificationTitle" destination="kxs-Jq-ZbN" id="s7H-HR-dOE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+</document>

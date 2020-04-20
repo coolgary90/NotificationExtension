@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="videoNotificationVC" customModule="VideoNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxa-aC-mcB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="PIq-jm-yJD"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqJ-gr-itg">
+                                <rect key="frame" x="10" y="185" width="300" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="LGS-Ge-f53"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-pz-SsA">
+                                <rect key="frame" x="10" y="215" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pWM-2A-EsQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="0f8-NV-LUm">
+                                <rect key="frame" x="150" y="80" width="20" height="20"/>
+                                <color key="color" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EqJ-gr-itg" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="10" id="0bM-as-lZk"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="l8b-pz-SsA" secondAttribute="trailing" constant="10" id="1oq-KO-tBU"/>
+                            <constraint firstItem="l8b-pz-SsA" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="10" id="5GR-zW-POW"/>
+                            <constraint firstItem="0f8-NV-LUm" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="6ih-1k-Fdu"/>
+                            <constraint firstItem="0f8-NV-LUm" firstAttribute="centerY" secondItem="Pxa-aC-mcB" secondAttribute="centerY" id="cv0-lY-JwT"/>
+                            <constraint firstItem="Pxa-aC-mcB" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="gdI-jO-TDx"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="Pxa-aC-mcB" secondAttribute="trailing" id="mts-0y-DEV"/>
+                            <constraint firstItem="l8b-pz-SsA" firstAttribute="top" secondItem="EqJ-gr-itg" secondAttribute="bottom" constant="5" id="pPt-UH-u4I"/>
+                            <constraint firstItem="EqJ-gr-itg" firstAttribute="top" secondItem="Pxa-aC-mcB" secondAttribute="bottom" constant="5" id="s10-eH-MWo"/>
+                            <constraint firstItem="Pxa-aC-mcB" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="vUX-6K-Lxl"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="EqJ-gr-itg" secondAttribute="trailing" constant="10" id="zl7-D0-KyK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="270"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="0f8-NV-LUm" id="VxU-ge-Pto"/>
+                        <outlet property="notificationSubTitle" destination="l8b-pz-SsA" id="nhy-gB-70D"/>
+                        <outlet property="notificationTitle" destination="EqJ-gr-itg" id="aKH-Hv-4Kd"/>
+                        <outlet property="videoView" destination="Pxa-aC-mcB" id="ZdR-0z-1N3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="91"/>
+        </scene>
+    </scenes>
+</document>
