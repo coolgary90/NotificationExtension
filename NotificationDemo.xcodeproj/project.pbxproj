@@ -23,6 +23,9 @@
 		E78ADF37244D7F630029C9ED /* videoNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78ADF36244D7F630029C9ED /* videoNotificationVC.swift */; };
 		E78ADF3A244D7F630029C9ED /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78ADF38244D7F630029C9ED /* MainInterface.storyboard */; };
 		E78ADF3E244D7F630029C9ED /* VideoNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E78ADF32244D7F630029C9ED /* VideoNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E78ADF49244D8E170029C9ED /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E78ADF48244D8E170029C9ED /* logo.png */; };
+		E78ADF4A244D8E170029C9ED /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E78ADF48244D8E170029C9ED /* logo.png */; };
+		E78ADF4B244D8E170029C9ED /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E78ADF48244D8E170029C9ED /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,7 @@
 		E78ADF36244D7F630029C9ED /* videoNotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoNotificationVC.swift; sourceTree = "<group>"; };
 		E78ADF39244D7F630029C9ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E78ADF3B244D7F630029C9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78ADF48244D8E170029C9ED /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			children = (
 				E78ADF42244D86800029C9ED /* Classes */,
 				E78ADF45244D868B0029C9ED /* Resources */,
+				E78ADF48244D8E170029C9ED /* logo.png */,
 				E71E50F0244D791800BC862F /* Info.plist */,
 			);
 			path = NotificationDemo;
@@ -322,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78ADF49244D8E170029C9ED /* logo.png in Resources */,
 				E71E50EF244D791800BC862F /* LaunchScreen.storyboard in Resources */,
 				E71E50EC244D791800BC862F /* Assets.xcassets in Resources */,
 				E71E50EA244D791500BC862F /* Main.storyboard in Resources */,
@@ -332,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78ADF4A244D8E170029C9ED /* logo.png in Resources */,
 				E71E5105244D796A00BC862F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78ADF4B244D8E170029C9ED /* logo.png in Resources */,
 				E78ADF3A244D7F630029C9ED /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,12 +27,15 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
             let content = notification.request.content
             self.notificationTitle.text = content.title
             self.notificationSubTitle.text = content.subtitle
-            if let imageUrl = content.userInfo["imageUrl"] as? String, let url = URL(string: imageUrl){
-                    if let image = try? UIImage(data: Data(contentsOf: url)){
-                        self.imageView.image = image
-                        self.activityIndicator.stopAnimating()
+            if let imageUrl = content.userInfo["imageUrl"] as? String, let url = URL(string: imageUrl), let image = try? UIImage(data: Data(contentsOf: url)){
+                        DispatchQueue.main.async {
+                            self.imageView.image = image
+                            self.activityIndicator.stopAnimating()
+                        }
                 }
-           }
+            else {
+                self.activityIndicator.stopAnimating()
+            }
         }
         
         func didReceive(_ response: UNNotificationResponse, completionHandler completion: @escaping (UNNotificationContentExtensionResponseOption) -> Void) {

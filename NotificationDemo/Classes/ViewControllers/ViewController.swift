@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let notificationTrigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 5, repeats: false)
+    let notificationTrigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 2, repeats: false)
 
     override func viewDidLoad() {
         super.viewDidLoad()
